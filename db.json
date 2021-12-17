@@ -1,28 +1,6 @@
 {
   "projects": [
     {
-      "name": "Teste Jamal",
-      "budget": "5000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 1
-    },
-    {
-      "name": "Projeto teste",
-      "budget": "2000",
-      "category": {
-        "id": "3",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 2
-    },
-    {
       "name": "Jamal Delivery",
       "budget": "15100",
       "category": {
@@ -45,19 +23,14 @@
       "id": 4
     },
     {
-      "name": "Supermercado Bebs",
-      "budget": "3200",
-      "category": {
-        "id": "5",
-        "name": "Comercial"
-      },
       "name": "Farmácia Real",
-      "cost": 0,
-      "services": [],
+      "budget": "3200",
       "category": {
         "id": "6",
         "name": "Analista"
-      }
+      },
+      "cost": 0,
+      "services": []
     },
     {
       "name": "Açougue do Boy",
@@ -82,7 +55,7 @@
       "cost": 0,
       "services": [],
       "category": {
-        "id": "8",
+        "id": "9",
         "name": "DevOps"
       }
     }
