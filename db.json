@@ -45,15 +45,46 @@
       "id": 4
     },
     {
-      "name": "Padaria Jamal",
+      "name": "Supermercado Bebs",
       "budget": "3200",
       "category": {
         "id": "5",
         "name": "Comercial"
       },
+      "name": "Farmácia Real",
       "cost": 0,
       "services": [],
-      "id": 5
+      "category": {
+        "id": "6",
+        "name": "Analista"
+      }
+    },
+    {
+      "name": "Açougue do Boy",
+      "cost": 0,
+      "services": [],
+      "category": {
+        "id": "7",
+        "name": "Suporte"
+      }
+    },
+    {
+      "name": "Software JJ",
+      "cost": 0,
+      "services": [],
+      "category": {
+        "id": "8",
+        "name": "Testers"
+      }
+    },
+    {
+      "name": "Lan House System",
+      "cost": 0,
+      "services": [],
+      "category": {
+        "id": "8",
+        "name": "DevOps"
+      }
     }
   ],
   "categories": [
