@@ -5,59 +5,44 @@
       "budget": "15100",
       "category": {
         "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": [],
-      "id": 3
-    },
-    {
-      "name": "Mr Sanduba",
-      "budget": "4000",
-      "category": {
-        "id": "1",
         "name": "Infra"
       },
       "cost": 0,
       "services": [],
-      "id": 4
+      "id": 1
     },
     {
       "name": "Farmácia Real",
       "budget": "3200",
       "category": {
         "id": "6",
-        "name": "Analista"
+        "name": "Comercial"
       },
       "cost": 0,
-      "services": []
-    },
-    {
-      "name": "Açougue do Boy",
-      "cost": 0,
       "services": [],
-      "category": {
-        "id": "7",
-        "name": "Suporte"
-      }
+      "id": 2
     },
     {
       "name": "Software JJ",
-      "cost": 0,
-      "services": [],
+      "budget": "5231",
       "category": {
         "id": "8",
-        "name": "Testers"
-      }
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
     },
     {
       "name": "Lan House System",
-      "cost": 0,
-      "services": [],
+      "budget": "2345",
       "category": {
         "id": "9",
-        "name": "DevOps"
-      }
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
     }
   ],
   "categories": [
