@@ -25,7 +25,7 @@ function Project() {
                     setProject(data)
                 })
                 .catch((err) => console.log)
-        }, 5000);
+        }, 1000);
     }, [id])
 
     function toggleProjectForm() {
