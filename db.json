@@ -43,6 +43,17 @@
       "cost": 0,
       "services": [],
       "id": 5
+    },
+    {
+      "name": "Jamal Modas",
+      "budget": "6321",
+      "category": {
+        "id": "5",
+        "name": "Comercial"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 6
     }
   ],
   "categories": [
