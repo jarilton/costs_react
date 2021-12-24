@@ -51,8 +51,27 @@
         "id": "5",
         "name": "Comercial"
       },
-      "cost": 0,
-      "services": [],
+      "cost": 300,
+      "services": [
+        {
+          "name": "teste",
+          "cost": "100",
+          "description": "testando",
+          "id": "944f636c-f9ea-4439-8c71-756a8dc999bd"
+        },
+        {
+          "name": "teste 2",
+          "cost": "100",
+          "description": "testando 2",
+          "id": "4213362a-ce18-4582-8b6e-612da8209a43"
+        },
+        {
+          "name": "teste 2",
+          "cost": "100",
+          "description": "testando 2",
+          "id": "deb45c0a-401a-4072-bfb9-d73fc3961713"
+        }
+      ],
       "id": 6
     }
   ],
