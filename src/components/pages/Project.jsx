@@ -1,4 +1,4 @@
-import { parse, v4 as uuidv4 } from 'uuid'
+import { v4 as uuidv4 } from 'uuid'
 
 import styles from './Project.module.css'
 
@@ -38,7 +38,7 @@ function Project() {
                     setServices(data.services)
                 })
                 .catch((err) => console.log)
-        }, 1000);
+        }, 500);
     }, [id])
 
     function editPost(project) {
@@ -94,22 +94,46 @@ function Project() {
         fetch(`http://localhost:222/projects/${project.id}`, {
             method: 'PATCH',
             headers: {
-                'Content-type': 'application/json'
+                'Content-type': 'application/json',
             },
-            body: JSON.stringify(project)
+            body: JSON.stringify(project),
         })
             .then((resp) => resp.json())
             .then((data) => {
-                //exibir os serviços
-                console.log(data)
+                setShowServiceForm(false)
             })
             .catch((err) => console.log(err))
 
     }
 
-    function removeService() {
+    function removeService(id, cost) {
 
+        const servicesUpdate = project.services.filter(
+            (service) => service.id !== id
+        )
+
+        const projectUpdate = project
+
+        projectUpdate.services = servicesUpdate
+        projectUpdate.cost = parseFloat(projectUpdate.cost) - parseFloat(cost)
+
+        fetch(`http://localhost:222/projects/${projectUpdate.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSON.stringify(projectUpdate),
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+                setProject(projectUpdate)
+                setServices(servicesUpdate)
+                setMessage('Serviço removido com sucesso!')
+                setType('success')
+            })
+            .catch((err) => console.log(err))
     }
+
 
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
@@ -168,19 +192,19 @@ function Project() {
                         </div>
                         <h2>Serviços</h2>
                         <Container customClass="start">
-                           {services.length > 0 &&
-                            services.map((service) => (
-                                <ServiceCard 
-                                    id={service.id}
-                                    name={service.name}
-                                    cost={service.cost}
-                                    description={service.description}
-                                    key={service.id}
-                                    handleRemove={removeService}
-                                />
-                            ))
-                           }
-                           {services.length === 0 && <p>Não há serviços cadastrados!</p>}
+                            {services.length > 0 &&
+                                services.map((service) => (
+                                    <ServiceCard
+                                        id={service.id}
+                                        name={service.name}
+                                        cost={service.cost}
+                                        description={service.description}
+                                        key={service.id}
+                                        handleRemove={removeService}
+                                    />
+                                ))
+                            }
+                            {services.length === 0 && <p>Não há serviços cadastrados!</p>}
                         </Container>
                     </Container>
                 </div>
