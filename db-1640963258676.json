@@ -1,0 +1,95 @@
+{
+  "projects": [
+    {
+      "name": "Jamal Delivery ",
+      "budget": "458",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "cost": 300,
+      "services": [
+        {
+          "name": "Contratar dev frontend React",
+          "cost": "300",
+          "description": "Realizar ajustes no painel ",
+          "id": "b75e336a-8cc2-4a9d-bf95-1f5b48b3bc05"
+        }
+      ],
+      "id": 1
+    },
+    {
+      "name": "Farmácia Real",
+      "budget": "3200",
+      "category": {
+        "id": "6",
+        "name": "Comercial"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 2
+    },
+    {
+      "name": "Software JJ",
+      "budget": "5231",
+      "category": {
+        "id": "8",
+        "name": "Planejamento"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 4
+    },
+    {
+      "name": "Lan House System",
+      "budget": "2345",
+      "category": {
+        "id": "9",
+        "name": "Design"
+      },
+      "cost": 0,
+      "services": [],
+      "id": 5
+    },
+    {
+      "name": "Jamal Modas",
+      "budget": "6321",
+      "category": {
+        "id": "5",
+        "name": "Comercial"
+      },
+      "cost": 200,
+      "services": [
+        {
+          "name": "teste jamal",
+          "cost": "200",
+          "description": "frontend",
+          "id": "248bd139-3f9b-4938-87e3-8b1344bfe2ea"
+        }
+      ],
+      "id": 6
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    },
+    {
+      "id": 5,
+      "name": "Comercial"
+    }
+  ]
+}

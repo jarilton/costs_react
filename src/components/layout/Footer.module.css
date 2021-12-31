@@ -3,10 +3,11 @@
     color: #fff;
     padding: 3em;
     text-align: center;
-    border-top: 1px solid red;
+    border-top: 1px solid orange;
     bottom: 0;
     position: fixed;
     width: 100%;
+    position: relative;
 }
 
 .social_list {
